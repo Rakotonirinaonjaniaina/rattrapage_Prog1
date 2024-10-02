@@ -1,5 +1,8 @@
-const assert = require('chai').assert;
+import {assert} from "chai";
+import {describe} from "mocha";
+import {removeWords} from "./removeWords";
 
+const assert = require('chai').assert;
 describe('removeWords', function() {
     it('should remove specified words from the string', function() {
         assert.equal(removeWords('Hello, ceci est un test', ['ceci', 'un']), 'Hello, est test');

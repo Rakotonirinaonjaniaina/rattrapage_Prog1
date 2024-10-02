@@ -1,5 +1,8 @@
-const assert = require('chai').assert;
+import {assert} from "chai";
+import {describe} from "mocha";
+import {getMostPopularPlaces} from "./getMostPopularPlaces";
 
+const assert = require('chai').assert;
 describe('getMostPopularPlaces', function() {
     it('should return the two most popular places', function() {
         assert.equal(getMostPopularPlaces('Analamahitsy', 'Analamahitsy', 'Itaosy', 'Behoririka', 'Itaosy', 'Itaosy'), 'Itaosy Analamahitsy');
